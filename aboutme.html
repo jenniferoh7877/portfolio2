@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = " jennifer's reflections";
-}
-</script>
-<head>
+</head>
 <body>
   <style> 
    
@@ -28,17 +23,16 @@ function myFunction() {
     
   </style>
   
- <h3>  Jennifer Oh  </h3>
+     <body>
+        <p id="heading"></p>
 
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Reflections</button>
-  
-
-   <h2> July 17th 2017</h2>
+     <button type="button" onclick="myFunction()">Reflections</button>
+     
+     <div id="reflections">
+        <h2> July 17th 2017</h2>
   
   <p>   Some of the similarities are that they both share most of the operators and the different events. For example, they both have the pen up and pen down command. Some differences are that Python is much easier to work with because I didn't have to keep looking for blocks that I was looking forand I was able to just type in what I wanted the turtle to do in Python. </p>
-  <p2>   I made some spelling mistakes and I also used a semicolon instead of a colon. Little mistakes were hard to detect. But at the same time I liked how I have more freedom to make the turtle to do what I wanted. </p>
+  <p>   I made some spelling mistakes and I also used a semicolon instead of a colon. Little mistakes were hard to detect. But at the same time I liked how I have more freedom to make the turtle to do what I wanted. </p>
   
   <h2> July 18th 2017</h2>
   
@@ -72,11 +66,34 @@ function myFunction() {
    <h2> July 28th 2017</h2>
   
   <p> Today, we got the robot to movew manusally and automatically usinf the infared lights. </p>
+     
+     </div>
   
+        
+    </body>
+    
+    
+    
+    <script>
+    
+    let x = document.getElementById('reflections');
+    x.style.display = "none";
+    
+    function myFunction() {
+    
+    
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } 
+    else {
+        x.style.display = 'none';
+    }
   
-  
+}
 
-  </body>
+
+    </script>
+
   </html>
   
   
